@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#E6DCC5">
+  <meta name="description" content="Liam Talbot — Manager & Vocalist, SuperGiant">
+  <title>Liam Talbot — SuperGiant</title>
+  <style>
+    :root {
+      --bg: #E6DCC5;
+      --red: #E5180E;
+      --black: #000000;
+      --white: #ffffff;
+      --shadow: 0 16px 40px rgba(0,0,0,.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--red);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100svh;
+      display: flex;
+      justify-content: center;
+      padding: 22px 18px calc(30px + env(safe-area-inset-bottom));
+    }
+
+    .card {
+      width: min(100%, 470px);
+      min-height: calc(100svh - 44px);
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .mini-logo-wrap {
+      display: flex;
+      justify-content: center;
+      padding: 6px 0 20px;
+    }
+
+    .mini-logo {
+      width: 176px;
+      max-width: 44vw;
+      height: auto;
+      display: block;
+      border-radius: 24px;
+    }
+
+    .identity {
+      text-align: center;
+      margin-top: 2px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(36px, 10vw, 56px);
+      line-height: .95;
+      letter-spacing: -0.055em;
+      font-weight: 900;
+      color: var(--red);
+    }
+
+    .role {
+      margin: 14px 0 0;
+      font-size: 18px;
+      line-height: 1.35;
+      font-weight: 700;
+      color: var(--black);
+    }
+
+    .band {
+      margin: 4px 0 0;
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--red);
+    }
+
+    .primary {
+      margin-top: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 62px;
+      padding: 16px 24px;
+      border: 3px solid var(--red);
+      border-radius: 18px;
+      background: var(--red);
+      color: var(--bg);
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      box-shadow: var(--shadow);
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+
+    .primary:active {
+      transform: scale(.985);
+      box-shadow: 0 8px 20px rgba(0,0,0,.11);
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .link {
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 12px 10px;
+      border: 2px solid var(--red);
+      border-radius: 14px;
+      color: var(--red);
+      text-decoration: none;
+      font-weight: 800;
+      background: transparent;
+    }
+
+    .contact-text {
+      margin: 22px auto 0;
+      width: 100%;
+      text-align: center;
+      color: var(--black);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .contact-text a {
+      color: var(--black);
+      text-decoration: none;
+    }
+
+    .spacer { flex: 1; min-height: 28px; }
+
+    .main-logo {
+      width: min(330px, 82vw);
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 18px;
+      color: rgba(0,0,0,.55);
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    @media (min-width: 700px) {
+      body { padding-top: 40px; padding-bottom: 40px; }
+      .card { min-height: 760px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="mini-logo-wrap">
+      <img class="mini-logo" src="assets/supergiant-mini-logo.png" alt="SuperGiant logo">
+    </div>
+
+    <section class="identity" aria-label="Contact details">
+      <h1>Liam Talbot</h1>
+      <p class="role">Manager &amp; Vocalist</p>
+      <p class="band">SuperGiant</p>
+    </section>
+
+    <a class="primary" href="liam-talbot.vcf">Save Contact</a>
+
+    <nav class="links" aria-label="Contact links">
+      <a class="link" href="tel:+447514540252">Call</a>
+      <a class="link" href="mailto:liam@supergiantband.co.uk">Email</a>
+      <a class="link" href="https://www.supergiantband.co.uk" target="_blank" rel="noopener">Website</a>
+      <a class="link" href="https://instagram.com/supergiantband" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+
+    <div class="contact-text">
+      <div><a href="tel:+447514540252">+44 7514 540252</a></div>
+      <div><a href="mailto:liam@supergiantband.co.uk">liam@supergiantband.co.uk</a></div>
+      <div><a href="https://www.supergiantband.co.uk">supergiantband.co.uk</a></div>
+      <div><a href="https://instagram.com/supergiantband">@supergiantband</a></div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <img class="main-logo" src="assets/supergiant-main-logo.png" alt="SuperGiant">
+    <div class="footer">Tap • Save • Connect</div>
+  </main>
+</body>
+</html>
